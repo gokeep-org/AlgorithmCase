@@ -19,8 +19,8 @@ if __name__ == '__main__':
     target_index = erfen(numbers, 3)
     print(target_index)
 
-    # print(int(9/2))
 
+# 条件，有序数组
 # 允许高位 > 低位
 # index = 取中位数
 # if 中间数 = 目标数：return 中间数索引位置
