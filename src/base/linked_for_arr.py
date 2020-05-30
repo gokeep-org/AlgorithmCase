@@ -70,6 +70,17 @@ class LinkedList:
                 size = size + 1
         return size
 
+    def cover(self):
+        temp_node = self
+        new_node = None
+        # self.next = None
+        while True:
+            if temp_node.next is None:
+                break
+            else:
+                temp_node = temp_node.next
+        # self = temp_node
+
 
 if __name__ == '__main__':
     link = LinkedList()
@@ -87,5 +98,7 @@ if __name__ == '__main__':
     print(link.len())
     print("----------delete")
     link.delete(2)
+    link.list()
+    link.cover()
     link.list()
 # print("aaa")
