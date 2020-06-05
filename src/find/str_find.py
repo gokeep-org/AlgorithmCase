@@ -12,16 +12,17 @@ def find_index(str, pattern):
         else:
             i = i - j + 1
             j = 0
-
     if j == pattern_len:
         return i - j
     else:
         return -1
 
+
+
+
+
 if __name__ == '__main__':
-    str = 'ABCDAB ABCDJ990ABCDABD DRR'
+    str = 'BBC ABCDAB ABCDABCDABDE'
     pattern = 'ABCDABD'
     print(find_index(str, pattern))
-
-
 # 模式串匹配暴力匹配法
